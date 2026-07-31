@@ -1,0 +1,11 @@
+*.egg-info/
+*.pyc
+__pycache__/
+.claude/
+.pytest_cache/
+.venv/
+build/
+source/zanac.rom
+uv.lock
+user-notes/
+xtra/

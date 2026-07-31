@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      // Plain server, no debugger — Ctrl+Shift+B.
+      "label": "web: serve",
+      "type": "shell",
+      "command": "node tools/serve.mjs --root web --port 8000",
+      "options": { "cwd": "${workspaceFolder}" },
+      "isBackground": true,
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "assets: regenerate",
+      "type": "shell",
+      "command": "python tools/export_assets.py",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "panel": "dedicated", "clear": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "kb: validate",
+      "type": "shell",
+      "command": "zanackb validate",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  // F5 → starts the static server (tools/serve.mjs) and opens the browser port
+  // at http://localhost:8000/ with the debugger attached. Stopping the session
+  // kills the server, so F5 is always safe to press again.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Zanac (web) — Chrome",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/serve.mjs",
+      "args": ["--root", "web", "--port", "8000"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "listening on (https?://\\S+)",
+        "uriFormat": "%s",
+        "action": "debugWithChrome",
+        "webRoot": "${workspaceFolder}/web"
+      }
+    },
+    {
+      "name": "Zanac (web) — Edge",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/serve.mjs",
+      "args": ["--root", "web", "--port", "8000"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "listening on (https?://\\S+)",
+        "uriFormat": "%s",
+        "action": "debugWithEdge",
+        "webRoot": "${workspaceFolder}/web"
+      }
+    },
+    {
+      "name": "Zanac (web) — default browser (no debugger)",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/tools/serve.mjs",
+      "args": ["--root", "web", "--port", "8000"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "listening on (https?://\\S+)",
+        "uriFormat": "%s",
+        "action": "openExternally"
+      }
+    },
+    {
+      // For the Python side (tools/*.py, openMSX verification scripts):
+      // open the file, then pick this config.
+      "name": "Python: current tool file",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}

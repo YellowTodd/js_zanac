@@ -1,0 +1,184 @@
+{
+  "source": {
+    "sha1": "46e9ed7b7f6dfda8eee266476c9ebc4dd9d8fcc2",
+    "base": 16384,
+    "size": 32768
+  },
+  "data": {
+    "file": "data.png",
+    "byteLength": 32768,
+    "base": 16384,
+    "size": 32768,
+    "retainedBytes": 13141,
+    "note": "payload byte i is ROM address 0x4000+i; code zeroed; exact bytes in the PNG's zaNc chunk"
+  },
+  "gfx": {
+    "file": "gfx.png",
+    "byteLength": 8528,
+    "blocks": [
+      {
+        "name": "charset_bitmap",
+        "kind": "pattern",
+        "tile": 0,
+        "offset": 0,
+        "length": 2048,
+        "src": "0x5EFC",
+        "loader": "load_charset_sprites"
+      },
+      {
+        "name": "charset_colors",
+        "kind": "color",
+        "tile": 0,
+        "offset": 2048,
+        "length": 2048,
+        "src": "0x64D3",
+        "loader": "load_charset_sprites"
+      },
+      {
+        "name": "sprite_patterns",
+        "kind": "sprite",
+        "tile": 0,
+        "offset": 4096,
+        "length": 2048,
+        "src": "0x6976",
+        "loader": "load_charset_sprites"
+      },
+      {
+        "name": "bg_late_bitmap_a",
+        "kind": "pattern",
+        "tile": 23,
+        "offset": 6144,
+        "length": 160,
+        "src": "0x666F",
+        "loader": "load_bg_tiles"
+      },
+      {
+        "name": "bg_late_colors_a",
+        "kind": "color",
+        "tile": 23,
+        "offset": 6304,
+        "length": 160,
+        "src": "0x68A9",
+        "loader": "load_bg_tiles"
+      },
+      {
+        "name": "bg_late_bitmap_b",
+        "kind": "pattern",
+        "tile": 91,
+        "offset": 6464,
+        "length": 536,
+        "src": "0x6705",
+        "loader": "load_bg_tiles"
+      },
+      {
+        "name": "bg_late_colors_b",
+        "kind": "color",
+        "tile": 91,
+        "offset": 7000,
+        "length": 552,
+        "src": "0x68DD",
+        "loader": "load_bg_tiles"
+      },
+      {
+        "name": "logo_bitmap",
+        "kind": "pattern",
+        "tile": 176,
+        "offset": 7552,
+        "length": 488,
+        "src": "0x5D2C",
+        "loader": "load_logo_tiles"
+      },
+      {
+        "name": "logo_colors",
+        "kind": "color",
+        "tile": 176,
+        "offset": 8040,
+        "length": 488,
+        "src": "0x5EF0",
+        "loader": "load_logo_tiles"
+      }
+    ]
+  },
+  "palette": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      62,
+      184,
+      73
+    ],
+    [
+      116,
+      208,
+      125
+    ],
+    [
+      89,
+      85,
+      224
+    ],
+    [
+      128,
+      118,
+      241
+    ],
+    [
+      185,
+      94,
+      81
+    ],
+    [
+      101,
+      219,
+      239
+    ],
+    [
+      219,
+      101,
+      89
+    ],
+    [
+      255,
+      137,
+      125
+    ],
+    [
+      204,
+      195,
+      94
+    ],
+    [
+      222,
+      208,
+      135
+    ],
+    [
+      58,
+      162,
+      65
+    ],
+    [
+      183,
+      102,
+      181
+    ],
+    [
+      204,
+      204,
+      204
+    ],
+    [
+      255,
+      255,
+      255
+    ]
+  ]
+}
