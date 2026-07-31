@@ -1,6 +1,10 @@
-# zanac-re
+# zanac-ai
 
-Cleanroom reverse engineering of Zanac AI for MSX 1 (by Compile, 1986).
+Cleanroom reverse engineering of Zanac AI for MSX 1 (by Compile, 1986) by 
+Marcelo de Gomensoro Malheiros
+
+Assembler porting to javascript by Kijun Na with Claude
+
 
 See `plan.md` (top level) for the full design. This README is the operator's quick reference.
 
