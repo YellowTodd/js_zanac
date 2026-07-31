@@ -91,12 +91,14 @@ for off in range(80):
 ### Step 2 — Write-watchpoints for changing bytes
 
 For each byte identified as changing and still unnamed:
+{% raw %}
 ```python
 wp = msx.cmd(
     f"debug set_watchpoint write_mem 0x{addr:04X} {{}} "
     f"{{set ::wp_pc_{addr:04X} [reg PC]; debug break}}"
 )
 ```
+{% endraw %}
 Let the game run through title → game-start → 5s gameplay. Report PC for each
 write, then decode the 6 bytes before PC to see the instruction context.
 
