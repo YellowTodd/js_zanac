@@ -1,10 +1,11 @@
-# zanac-ai
+# zanac-ai for javascript
 
 Cleanroom reverse engineering of Zanac AI for MSX 1 (by Compile, 1986) by 
 Marcelo de Gomensoro Malheiros
 
-Assembler porting to javascript by Kijun Na with Claude
-
+Assembler porting to javascript by Kijun Na with Claude.
+source folder contains z80 assembler rom source code.
+web folder contains java script source code for play.
 
 See `plan.md` (top level) for the full design. This README is the operator's quick reference.
 
